@@ -38,6 +38,20 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}
   .catch(error => console.error('Error:', error));
 
 
+// Bootstrap tooltip の再設定
+
+
+// ツールチップの有効化
+
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl, {
+    delay: 0 // 遅延時間を0に設定
+  })
+})
+
+
+
 // クイズscript
 
 const quiz = [
@@ -399,7 +413,7 @@ function taskWindow() {
   }
 }
 
-
+//
 const resetQuiz = () => {
   document.getElementById('window').style.display = 'none';
   quizIndex = 0;

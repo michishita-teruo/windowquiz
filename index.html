@@ -13,11 +13,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- Bootstrap JS and Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-8BqDl3Y4/MGJr81Mz9Uq6Z1twU3gHJo+XWf/i3rPbC8bq5eDAAwVaG4T9qj2ue8D"
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
 
     <!--  css -->
     <link href="style.css" rel="stylesheet" type="text/css" />
@@ -40,7 +41,7 @@
             <div class="window-header" id="window-header">
                 <div class="window-header-title">
                     <img class="win_head_img" src="./icon/vscode.png" alt="VSCode">
-                    <p class="win_head_title">VSCodeクイズ</p>
+                    <p class="win_head_title ">VSCodeクイズ</p>
                 </div>
                 <div class="window-header-tray">
                     <button class="win_head_button" id="" onclick="minimizeWindow()">
@@ -125,30 +126,27 @@
                     <img class="icon_img" id="power_icon" src="./icon/icons8-シャットダウン-60 (1).png" alt=""
                         onclick="closeCurrentTab()" data-bs-toggle="tooltip" title="このページを閉じます">
                 </div>
-            </div>
-            <div class="d-flex " id="">
 
+            </div>
+            <div class="container">
+                <div class="menu_icon" onclick="openWindow()">
+                    <img class="icon_img" src="./icon/vscode.svg" alt="vscode_icon" data-bs-toggle="tooltip"
+                        title="クイズ起動">
+                    <p class="icon_text">VSCode<br>クイズ</p>
+                </div>
+
+                <div class="menu_icon" id="icon2" onclick="openWindowQuiz02()">
+                    <img class="icon_img" src="./icon/icons8-python-48.png" alt="python_icon" data-bs-toggle="tooltip"
+                        title="クイズ起動">
+                    <p class="icon_text">よく使う<br>英語クイズ</p>
+                </div>
             </div>
         </div>
     </div>
 
+
+
     <script src="script.js"></script>
-    <!-- Bootstrap JS and Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-8BqDl3Y4/MGJr81Mz9Uq6Z1twU3gHJo+XWf/i3rPbC8bq5eDAAwVaG4T9qj2ue8D"
-        crossorigin="anonymous"></script>
-
-
-    <script>
-        // ツールチップの有効化
-        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-            return new bootstrap.Tooltip(tooltipTriggerEl);
-        });
-    </script>
-
-
-
 </body>
 
 </html>
