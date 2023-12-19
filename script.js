@@ -446,8 +446,8 @@ function windowWindow() {
   document.getElementById('maximizeWindow').style.display = 'block';
 
   if (window.innerWidth <= 520) {
-    windowOpened.style.width = '100vw';
-    windowOpened.style.height = '100vh';
+    windowOpened.style.width = '95vw';
+    windowOpened.style.height = '95vh';
   } else if (window.innerWidth <= 960) {
     windowOpened.style.width = '80vw';
     windowOpened.style.height = '80vh';
