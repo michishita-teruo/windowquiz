@@ -27,14 +27,13 @@
 
 <body>
     <div class="desktop">
-        <div class="icon" onclick="openWindow()">
-            <img class="icon_img" src="./icon/vscode.svg" alt="vscode_icon" data-bs-toggle="tooltip" title="クイズ起動">
+        <div class="icon" onclick="openWindow()" data-bs-toggle="tooltip" title="クイズ01起動">
+            <img class="icon_img_nonani" src="./icon/vscode.svg" alt="vscode_icon">
             <p class="icon_text">VSCode<br>クイズ</p>
         </div>
 
-        <div class="icon" id="icon2" onclick="openWindowQuiz02()">
-            <img class="icon_img" src="./icon/icons8-python-48.png" alt="python_icon" data-bs-toggle="tooltip"
-                title="クイズ起動">
+        <div class="icon" id="icon2" onclick="openWindowQuiz02()" data-bs-toggle="tooltip" title="クイズ02起動">
+            <img class="icon_img_nonani" src="./icon/icons8-python-48.png" alt="python_icon">
             <p class="icon_text">よく使う<br>英語クイズ</p>
         </div>
         <div id="window" class="window" style="display: none;">
@@ -81,7 +80,7 @@
         <div id="taskbar-icons">
         </div>
         <div id="start-menu">
-            <div class="icon_wrapper" onclick="taskWindow()">
+            <div class="icon_wrapper" onclick="taskWindow()" data-bs-toggle="tooltip" title="スタート">
                 <img class="icon_img" src="./icon/windows_icon.png" alt="">
             </div>
             <div id="search-container">
@@ -98,10 +97,12 @@
             <div class="icon_wrapper">
                 <img class="icon_img" src="./icon/icons8-歯車-48.png" alt="" data-bs-toggle="tooltip" title="dummy">
             </div>
-            <div class="icon_wrapper" id="task_vscode_icon" onclick="openWindow()">
+            <div class="icon_wrapper" id="task_vscode_icon" onclick="openWindow()" data-bs-toggle="tooltip"
+                title="クリックで最大化">
                 <img class="icon_img" src="./icon/vscode.png" alt="">
             </div>
-            <div class="icon_wrapper" id="task_python_icon" onclick="openWindowQuiz02()">
+            <div class="icon_wrapper" id="task_python_icon" onclick="openWindowQuiz02()" data-bs-toggle="tooltip"
+                title="クリックで最大化">
                 <img class="icon_img" src="./icon/icons8-python-48.png" alt="">
             </div>
         </div>
@@ -120,7 +121,8 @@
         <div id="menu_window">
             <div id="menu_window_footer">
                 <div class="icon_wrapper">
-                    <img class="icon_img " id="user_icon" src="./icon/icons8-ユーザー-48.png" alt="">
+                    <img class="icon_img " id="user_icon" src="./icon/icons8-ユーザー-48.png" alt=""
+                        data-bs-toggle="tooltip" title="dummy">
                 </div>
                 <div class="icon_wrapper">
                     <img class="icon_img" id="power_icon" src="./icon/icons8-シャットダウン-60 (1).png" alt=""
@@ -129,15 +131,15 @@
 
             </div>
             <div class="container">
-                <div class="menu_icon" onclick="openWindow()">
-                    <img class="icon_img" src="./icon/vscode.svg" alt="vscode_icon" data-bs-toggle="tooltip"
-                        title="クイズ起動">
+                <div class="menu_icon my-4" onclick="openWindow(),taskWindow()" data-bs-toggle="tooltip"
+                    title="クイズ01起動">
+                    <img class="icon_img_nonani" src="./icon/vscode.svg" alt="vscode_icon">
                     <p class="icon_text">VSCode<br>クイズ</p>
                 </div>
 
-                <div class="menu_icon" id="icon2" onclick="openWindowQuiz02()">
-                    <img class="icon_img" src="./icon/icons8-python-48.png" alt="python_icon" data-bs-toggle="tooltip"
-                        title="クイズ起動">
+                <div class="menu_icon my-4" id="icon2" onclick="openWindowQuiz02(),taskWindow()"
+                    data-bs-toggle="tooltip" title="クイズ02起動">
+                    <img class="icon_img_nonani" src="./icon/icons8-python-48.png" alt="python_icon">
                     <p class="icon_text">よく使う<br>英語クイズ</p>
                 </div>
             </div>

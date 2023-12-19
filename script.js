@@ -444,8 +444,17 @@ function maximizeWindow() {
 function windowWindow() {
   document.getElementById('windowWindow').style.display = 'none';
   document.getElementById('maximizeWindow').style.display = 'block';
-  windowOpened.style.width = '1000px';
-  windowOpened.style.height = '600px';
+
+  if (window.innerWidth <= 520) {
+    windowOpened.style.width = '100vw';
+    windowOpened.style.height = '100vh';
+  } else if (window.innerWidth <= 960) {
+    windowOpened.style.width = '80vw';
+    windowOpened.style.height = '80vh';
+  } else {
+    windowOpened.style.width = '900px';
+    windowOpened.style.height = '80vh';
+  }
 }
 
 function closeCurrentTab() {
