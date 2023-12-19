@@ -124,7 +124,7 @@ body {
 
 @media (max-width: 520px) {
     .window-header-title {
-        width: 160px;
+        width: 180px;
     }
 
 }
@@ -486,8 +486,6 @@ strongred {
 #time {
     font-size: 0.7rem;
 }
-
-#weather:hover {}
 
 /* タブレットサイズのデバイス */
 @media (max-width: 768px) {
